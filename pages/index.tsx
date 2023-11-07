@@ -30,12 +30,12 @@ export default function Home() {
         <li key={item.name}>{item.name}</li>
       ))}
       <button
-        onClick={() => router.push({ query: { offset: Number(offset) - 1 } })}
+        onClick={() => router.push({ query: { offset: Number(offset) - 10 } })}
       >
         이전
       </button>
       <button
-        onClick={() => router.push({ query: { offset: Number(offset) + 1 } })}
+        onClick={() => router.push({ query: { offset: Number(offset) + 10 } })}
       >
         다음
       </button>
